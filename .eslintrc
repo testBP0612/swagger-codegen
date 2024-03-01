@@ -1,0 +1,36 @@
+{
+  "extends": ["eslint:recommended", "plugin:@typescript-eslint/recommended", "prettier"],
+  "plugins": ["@typescript-eslint"],
+  "rules": {
+    "no-async-promise-executor": "off",
+    "prefer-promise-reject-errors": "off",
+    "no-plusplus": "off",
+    "no-restricted-syntax": ["error", "FunctionExpression", "WithStatement"],
+    "react/require-default-props": "off",
+    "no-console": ["error", { "allow": ["error"] }],
+    "react/forbid-prop-types": "off",
+    "max-len": [
+      "error",
+      {
+        "code": 120,
+        "ignoreUrls": true,
+        "ignoreStrings": true,
+        "ignoreTemplateLiterals": true,
+        "ignoreRegExpLiterals": true
+      }
+    ],
+    "no-throw-literal": "off",
+    "@typescript-eslint/no-throw-literal": "off",
+    "react/jsx-props-no-spreading": "off",
+    "jsx-a11y/no-static-element-interactions": "off",
+    "jsx-a11y/click-events-have-key-events": "off",
+    "@typescript-eslint/naming-convention": "warn",
+    "react/function-component-definition": [
+      2,
+      {
+        "namedComponents": ["arrow-function", "function-declaration"],
+        "unnamedComponents": "arrow-function"
+      }
+    ]
+  }
+}
