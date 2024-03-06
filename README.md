@@ -1,9 +1,12 @@
 # code gen api endpoint 專案說明
 ## 使用方式
 所需的依賴項目已經寫在 `package.json` 內，首先執行以下指令
+
 ```
 npm install
 ```
+
+複製 `.env.example`，刪除 .example，填入 `HTTP_CLIENT_TYPE`
 
 接著有兩種使用方法
 
@@ -12,7 +15,7 @@ npm install
 執行 `npm run generate` 即可產生所需的檔案。
 
 2. 使用 `npm run generate -- --local` 或 `npm run generate -- -l`
-來指定使用本地的 json 檔案，路徑是 `./json/swagger.json`
+來指定使用本地的 json 檔案，將線上 json 文件下載後放到路徑 `./json/swagger.json`
 
 ## 說明
 `/src/api`: gen 出來的程式碼。

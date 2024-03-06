@@ -3,14 +3,15 @@ const path = require('path');
 const fs = require('fs');
 
 exports.generateApiFromJson = (swaggerPath, callback) => {
-  const outputDir = path.resolve(process.cwd(), `./src/api`);
+  const outputDir = path.resolve(process.cwd(), `./api`);
+	const httpClientType = process.env.HTTP_CLIENT_TYPE;
   fs.mkdirSync(outputDir, { recursive: true });
 
   generateApi({
     name: 'MySuperbApi.ts',
     output: outputDir,
     input: swaggerPath,
-    httpClientType: 'axios',
+    httpClientType: httpClientType,
     templates: path.resolve(process.cwd(), './templates/base'),
     modular: true,
   })
