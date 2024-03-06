@@ -18,7 +18,7 @@ npm install
 來指定使用本地的 json 檔案，將線上 json 文件下載後放到路徑 `./json/swagger.json`
 
 ## 說明
-`/src/api`: gen 出來的程式碼。
+`/api`: gen 出來的程式碼。
 `/src/index.js`: 主要的執行檔案。
 `/templates`: codegen 的範本檔案，修改它會改變 code gen 的結果，可根據官方網站說明進行修改。
 `/json/swagger.json`: 放置 codegen 所需的 json。執行指令後會從 swagger 線上網址複製下來。
